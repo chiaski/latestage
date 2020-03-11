@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'AT Surt';
+    src: url('../fonts/ATSurt-Bold.woff2') format('woff2'),
+        url('../fonts/ATSurt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AT Surt Bold Oblique';
+    src: url('../fonts/ATSurt-BoldOblique.woff2') format('woff2'),
+        url('../fonts/ATSurt-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AT Surt';
+    src: url('../fonts/ATSurt-Regular.woff2') format('woff2'),
+        url('../fonts/ATSurt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AT Surt Oblique';
+    src: url('../fonts/ATSurt-RegularOblique.woff2') format('woff2'),
+        url('../fonts/ATSurt-RegularOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

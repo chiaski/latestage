@@ -1,0 +1,22 @@
+$color: pink;
+
+body{
+    background: $color;
+    font-family: 'AT Surt';
+
+}
+
+h1, h2, h3, h4{
+    font-family: 'AT Surt';
+}
+
+.back-btn, a{
+    font-family: 'AT Surt';
+    color:red;
+}
+
+
+.back-btn:hover, a:hover{
+    font-family: 'AT Surt';
+    color:blue;
+}
