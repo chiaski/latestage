@@ -21,15 +21,20 @@ exports.createPages = async ({ graphql, actions }) => {
               fields {
                 slug
               }
-              frontmatter {
-                title
-              }
+              frontmatter {  
+              title
+              tags
             }
           }
         }
       }
-    `
-  )
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
 
   if (result.errors) {
     throw result.errors
