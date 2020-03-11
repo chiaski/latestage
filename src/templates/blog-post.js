@@ -52,7 +52,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
     <p>Taggies: {post.frontmatter.tags.map((tag, index) => { return (
         <span>
-            <Link to={`../tags`}>{tag}</Link>
+            <Link to={`../tags/`}>{tag}</Link>
         </span>
       )})}
     </p>
