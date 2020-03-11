@@ -19,6 +19,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
+            <Link to="/" class="back-btn">← Back</Link>
           <h1
             style={{
               marginTop: rhythm(1),
@@ -36,6 +37,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {post.frontmatter.date}
           </p>
+
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -47,6 +49,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <Bio />
         </footer>
       </article>
+
+    <p>Taggies: {post.frontmatter.tags.map((tag, index) => { return (
+        <span>
+            <Link to={`../tags`}>{tag}</Link>
+        </span>
+      )})}
+    </p>
 
       <nav>
         <ul
@@ -95,6 +104,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

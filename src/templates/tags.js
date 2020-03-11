@@ -12,8 +12,8 @@ const Tags = ({ pageContext, data }) => {
   } tagged with "${tag}"`
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
+    <div id="gatsby-focus-wrapper">
+      <h1>Tag: {tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields
@@ -29,6 +29,7 @@ const Tags = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
+        <br/><br/>
       <Link to="/tags">All tags</Link>
     </div>
   )
