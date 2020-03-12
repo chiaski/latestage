@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import LogoImg from "../../content/assets/brand/logo.png"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -12,7 +13,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
+      <div id="top">
+      <Link to=".."><img src={LogoImg} alt="Late Stage" /></Link>
+      </div>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}

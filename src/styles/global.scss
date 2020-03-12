@@ -1,9 +1,12 @@
-$color: pink;
+$color: #e3ecef;
+
+// Typography
+$text: #655e5e;
 
 body{
     background: $color;
     font-family: 'AT Surt';
-
+    color: $text;
 }
 
 h1, h2, h3, h4{
@@ -29,10 +32,36 @@ h1, h2, h3, h4{
     a{
         color:blue;
         margin:0 1em;
+        text-decoration: none;
     }
     
 }
 
+p{
+    font-weight: 100;
+}
+
 #site-title{
     color:blue;
+}
+
+#header{
+    padding:1em;
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    height:100%;
+    text-align: center;
+    
+    a{
+        text-decoration: none !important;
+        border:0;
+    }
+    
+    img{
+        text-decoration: none;
+        border:0;
+        max-width:250px;
+    }
+    
 }
