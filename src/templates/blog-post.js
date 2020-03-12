@@ -14,8 +14,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location}>
-      <div id="top">
-      <Link to=".."><img src={LogoImg} alt="Late Stage" /></Link>
+      <div id="header">
+      <Link to=".."><img src={LogoImg} alt={siteTitle} /></Link>
       </div>
       <SEO
         title={post.frontmatter.title}
