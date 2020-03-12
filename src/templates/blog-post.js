@@ -21,6 +21,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
             <Link to="/" class="back-btn">← Back</Link>
           <h1
+            id="site-title"
             style={{
               marginTop: rhythm(1),
               marginBottom: 0,
