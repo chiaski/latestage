@@ -1,4 +1,8 @@
-$color: #edf2f4;
+$color: #f6f8f8;
+
+$link: #2c2727;
+
+$b: #060607;
 
 // Typography
 $text: #655e5e;
@@ -15,7 +19,7 @@ h1, h2, h3, h4{
 
 .back-btn, a{
     font-family: 'AT Surt';
-    color:red;
+    color: $link;
 }
 
 
@@ -36,15 +40,57 @@ h1, h2, h3, h4{
     
 }
 
+layout{
+    background: yellow;
+}
+
 p{
     font-weight: 100;
 }
+
+/* tp */
+
+
 
 #site-title{
     color:blue;
 }
 
+#site-header{
+    
+    padding-top:2em;
+    
+    h1{
+        margin:0;
+    }
+    
+}
+
+#site-header.front{
+    
+    
+}
+
+
+    .late{
+        position: absolute;
+        top:0;
+        width:100%;
+        left:0;
+        height:30px;
+        overflow: hidden;
+        padding:0 .3em;
+        line-height:30px;
+        box-sizing: border-box;
+        background: $b;
+        color: $color;
+        margin:0;
+    }
+
 #header{
+    background: red;
+    top:0;
+    left:0;
     padding:1em;
     box-sizing: border-box;
     position: relative;

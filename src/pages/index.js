@@ -11,9 +11,23 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+      
+      
+    <Layout location={location} title={siteTitle}> 
+      
+      
+         <div class='late'>
+      <span class='late-intro'></span>
+      
+    <marquee scrollamount='3'>
+        This is a space for music. 
+        This is a space for feeling. 
+        This is a space for the unfiltered.
+    </marquee>
+        </div>
+      
+      
       <SEO title="All posts" />
-      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
