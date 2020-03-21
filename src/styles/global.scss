@@ -48,6 +48,30 @@ p{
     font-weight: 100;
 }
 
+.post-preview{
+    
+    
+    h3{
+        max-width:80%;
+        // truncation doesn't work multiline
+        
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .date{
+        text-transform: uppercase;
+        letter-spacing:.1px;
+        margin:0;
+        float:right;
+    }
+    
+    
+}
+
+
+
 /* tp */
 
 
@@ -62,6 +86,7 @@ p{
     
     h1{
         margin:0;
+        color: $b;
     }
     
 }

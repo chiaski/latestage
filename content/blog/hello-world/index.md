@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 categories: ['Code', 'Getting into Gatsby']
