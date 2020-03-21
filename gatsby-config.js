@@ -3,7 +3,7 @@ module.exports = {
     title: `Late Stage`,
     author: {
       name: `Chia`,
-      summary: `is emo`,
+      summary: ``,
     },
     description: `a music blog`,
     siteUrl: `https://latestage.co`,
