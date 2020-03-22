@@ -2,7 +2,7 @@ $color: #f6f8f8;
 
 $link: #2c2727;
 
-$b: #060607;
+$b: #18181a;
 
 // Typography
 $text: #655e5e;
@@ -57,7 +57,17 @@ p{
 }
 
 
-/* ARTICLE */
+/* ARTICLE INDEX */
+
+
+    .date{
+        text-transform: uppercase;
+        letter-spacing:.3px;
+        margin:0;
+        font-size:.8em;
+        float:right;
+    }
+
 
 
 .post-preview{ 
@@ -77,23 +87,22 @@ p{
         cursor: e-resize;
     }
     
-    .date{
-        text-transform: uppercase;
-        letter-spacing:.1px;
-        margin:0;
-        float:right;
-    }
     
     
 }
 
 
-/* tp */
+/* ARTICLE */
 
+#article-title{
+    font-family: 'WindsorD';
+    color: $b;
+    margin:0 0 1em 0;
+}
 
-
-#site-title{
-    color:blue;
+.article .date{
+    margin:.5em 0;
+    padding:0;
 }
 
 #site-header{
@@ -134,9 +143,8 @@ p{
     left:0;
     padding:1em;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     width:100%;
-    height:100%;
     text-decoration: none;
     text-align: center;
     

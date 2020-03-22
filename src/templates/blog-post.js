@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import LogoImg from "../../content/assets/brand/logo.png"
 
+// <Link to=".."><img src={LogoImg} alt={siteTitle} /></Link>
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -15,33 +17,26 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   return (
     <Layout location={location}>
       <div id="header">
-      <Link to=".."><img src={LogoImg} alt={siteTitle} /></Link>
+      
       </div>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      
+      <article class="article">
         <header>
             <Link to="/" class="back-btn">← Back</Link>
+      
+          <p class="date">
+            {post.frontmatter.date}
+          </p>
+
           <h1
-            id="site-title"
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
+            id="article-title"
           >
             {post.frontmatter.title}
           </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
 
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />

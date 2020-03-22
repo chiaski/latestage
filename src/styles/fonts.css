@@ -29,3 +29,13 @@
     font-weight: normal;
     font-style: italic;
 }
+
+
+@font-face {
+    font-family: 'WindsorD';
+    src: url('../fonts/WindsorD-Reg.woff2') format('woff2'),
+        url('../fonts/WindsorD-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
