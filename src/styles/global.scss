@@ -13,6 +13,14 @@ body{
     color: $text;
 }
 
+*{
+    -webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-ms-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+}
+
 h1, h2, h3, h4{
     font-family: 'AT Surt';
 }
@@ -48,16 +56,25 @@ p{
     font-weight: 100;
 }
 
-.post-preview{
+
+/* ARTICLE */
+
+
+.post-preview{ 
     
-    
-    h3{
+    a, h3{
         max-width:80%;
         // truncation doesn't work multiline
-        
+        opacity:0.8;
         text-overflow:ellipsis;
         white-space: nowrap;
         overflow: hidden;
+    }
+    
+    
+    a, h3:hover{
+        opacity:1;    
+        cursor: e-resize;
     }
     
     .date{
@@ -69,7 +86,6 @@ p{
     
     
 }
-
 
 
 /* tp */
