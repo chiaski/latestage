@@ -3,6 +3,7 @@ $color: #f6f8f8;
 $link: #2c2727;
 
 $b: #18181a;
+$bg-dark: #181b21;
 
 // Typography
 $text: #655e5e;
@@ -105,6 +106,10 @@ article.post-preview{
 
 /* ARTICLE */
 
+.dark{
+    background: $bg-dark;
+}
+
 #article-title{
     font-size:3.2em;
     font-family: 'WindsorD';
@@ -142,7 +147,6 @@ nav.article li:hover{
     
 }
 
-
     .late{
         position: absolute;
         top:0;
@@ -159,7 +163,7 @@ nav.article li:hover{
     }
 
 #header{
-    background: red;
+    background: $b;
     top:0;
     left:0;
     padding:1em;
