@@ -33,9 +33,9 @@ const BlogIndex = ({ data, location }) => {
         return (
           <article class='post-preview' key={node.fields.slug}>
             <header>
-              <small class='date'>{node.frontmatter.date}</small>
-              <h3>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <div class='date'>{node.frontmatter.date}</div>
+              <h3 class='article-title'>
+                <Link to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

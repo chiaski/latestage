@@ -28,12 +28,14 @@ h1, h2, h3, h4{
 .back-btn, a{
     font-family: 'AT Surt';
     color: $link;
+    box-shadow: none;
+    opacity:0.8 !important;
 }
 
 
 .back-btn:hover, a:hover{
     font-family: 'AT Surt';
-    color:blue;
+    opacity:1;
 }
 
 
@@ -73,28 +75,38 @@ p{
 .post-preview{ 
     
     a, h3{
+        font-family:"WindsorD";
+        height:45px;
+        font-size:1.4em;
         max-width:80%;
         // truncation doesn't work multiline
         opacity:0.8;
         text-overflow:ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        margin-bottom:.5em;
     }
-    
     
     a, h3:hover{
         opacity:1;    
         cursor: e-resize;
     }
     
+    .date{
+        margin-top:1em;
+    }
     
-    
+}
+
+article.post-preview{
+    padding: 0;
 }
 
 
 /* ARTICLE */
 
 #article-title{
+    font-size:3.2em;
     font-family: 'WindsorD';
     color: $b;
     margin:0 0 1em 0;
@@ -103,6 +115,15 @@ p{
 .article .date{
     margin:.5em 0;
     padding:0;
+}
+
+nav.article li{
+    opacity:0.8;
+}
+
+nav.article li:hover{
+    opacity:1;
+    text-shadow: 0 0 10px #ddd;
 }
 
 #site-header{

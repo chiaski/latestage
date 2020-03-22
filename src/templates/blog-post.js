@@ -57,7 +57,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       )})}
     </div>
 
-      <nav>
+      <nav class="article">
         <ul
           style={{
             display: `flex`,
