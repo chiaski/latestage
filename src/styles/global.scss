@@ -1,20 +1,21 @@
 $color: #f6f8f8;
 
-$link: #2c2727;
+$link: #e2fdff;
 
 $b: #18181a;
 $bg-dark: #181b21;
 
 // Typography
-$text: #655e5e;
+$text: #e8e9eb;
 
 body{
-    background: $color;
+    background: $bg-dark;
     font-family: 'AT Surt';
     color: $text;
 }
 
 *{
+    color: $text;
     -webkit-transition: all .2s linear;
 -moz-transition: all .2s linear;
 -ms-transition: all .2s linear;
@@ -23,6 +24,7 @@ transition: all .2s linear;
 }
 
 h1, h2, h3, h4{
+    color: $text;
     font-family: 'AT Surt';
 }
 
@@ -34,9 +36,8 @@ h1, h2, h3, h4{
 }
 
 
-.back-btn:hover, a:hover{
-    font-family: 'AT Surt';
-    opacity:1;
+.back-btn:hover{
+    opacity:1 !important;
 }
 
 
@@ -49,10 +50,6 @@ h1, h2, h3, h4{
         margin:0 1em;
     }
     
-}
-
-layout{
-    background: yellow;
 }
 
 p{
@@ -84,6 +81,7 @@ p{
         opacity:0.8;
         text-overflow:ellipsis;
         white-space: nowrap;
+        color: $text;
         overflow: hidden;
         margin-bottom:.5em;
     }
@@ -113,7 +111,7 @@ article.post-preview{
 #article-title{
     font-size:3.2em;
     font-family: 'WindsorD';
-    color: $b;
+    color: $text;
     margin:0 0 1em 0;
 }
 
@@ -137,7 +135,8 @@ nav.article li:hover{
     
     h1{
         margin:0;
-        color: $b;
+        color: $text;
+
     }
     
 }
