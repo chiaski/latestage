@@ -15,14 +15,7 @@ const Layout = ({ location, title, children }) => {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+        <Link>
           {title}
         </Link>
       </h1>

@@ -1,9 +1,11 @@
-$color: #f6f8f8;
 
 $link: #e2fdff;
 
 $b: #18181a;
 $bg-dark: #181b21;
+
+$gray: #4a4e4e;
+$light-gray: #989f9f;
 
 // Typography
 $text: #e8e9eb;
@@ -24,20 +26,18 @@ transition: all .2s linear;
 }
 
 h1, h2, h3, h4{
-    color: $text;
     font-family: 'AT Surt';
 }
 
 .back-btn, a{
     font-family: 'AT Surt';
-    color: $link;
+    color: $gray !important;
     box-shadow: none;
-    opacity:0.8 !important;
 }
 
 
 .back-btn:hover{
-    opacity:1 !important;
+    cursor: pointer;
 }
 
 
@@ -60,13 +60,14 @@ p{
 /* ARTICLE INDEX */
 
 
-    .date{
-        text-transform: uppercase;
-        letter-spacing:.3px;
-        margin:0;
-        font-size:.8em;
-        float:right;
-    }
+.date{
+    text-transform: uppercase;
+    letter-spacing:.3px;
+    margin:0;
+    font-size:.8em;
+    float:right;
+    color: $gray;
+}
 
 
 
@@ -78,12 +79,13 @@ p{
         font-size:1.4em;
         max-width:80%;
         // truncation doesn't work multiline
-        opacity:0.8;
+        opacity:0.7;
         text-overflow:ellipsis;
         white-space: nowrap;
-        color: $text;
+        color: $light-gray !important;
         overflow: hidden;
         margin-bottom:.5em;
+        letter-spacing:.6px;
     }
     
     a, h3:hover{
@@ -111,8 +113,10 @@ article.post-preview{
 #article-title{
     font-size:3.2em;
     font-family: 'WindsorD';
-    color: $text;
-    margin:0 0 1em 0;
+    color: $light-gray;
+    line-height:1em;
+    padding:0;
+    margin:.5em 0 1.5em 0;
 }
 
 .article .date{
@@ -126,7 +130,7 @@ nav.article li{
 
 nav.article li:hover{
     opacity:1;
-    text-shadow: 0 0 10px #ddd;
+    text-shadow: 0 0 10px $b;
 }
 
 #site-header{
@@ -143,10 +147,11 @@ nav.article li:hover{
 
 #site-header.front{
     
+    margin-top:2em;
     
 }
 
-    .late{
+.late{
         position: absolute;
         top:0;
         width:100%;
@@ -157,9 +162,9 @@ nav.article li:hover{
         line-height:30px;
         box-sizing: border-box;
         background: $b;
-        color: $color;
+        color: $gray;
         margin:0;
-    }
+}
 
 #header{
     background: $b;
